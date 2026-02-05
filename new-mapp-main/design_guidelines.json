@@ -1,0 +1,150 @@
+{
+  "identity": {
+    "name": "Neo-Pop POS",
+    "vibe": "Tactile, High-Energy, Clarity-First",
+    "description": "A point-of-sale system that feels like a toy but works like a tank. High contrast, chunky interactive elements, and color-coded categories for instant recognition."
+  },
+  "typography": {
+    "primary_font": "Outfit",
+    "secondary_font": "Inter",
+    "mono_font": "JetBrains Mono",
+    "scale": {
+      "h1": "text-4xl font-bold tracking-tight",
+      "h2": "text-3xl font-bold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body": "text-base font-medium",
+      "price": "font-mono text-lg font-bold"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#7C3AED",
+        "foreground": "#FFFFFF"
+      },
+      "secondary": {
+        "DEFAULT": "#FACC15",
+        "foreground": "#422006"
+      },
+      "background": "#F8FAFC",
+      "surface": "#FFFFFF",
+      "text": "#0F172A",
+      "border": "#E2E8F0"
+    },
+    "categories": {
+      "cold_drinks": {
+        "bg": "#22D3EE",
+        "text": "#083344"
+      },
+      "hot_drinks": {
+        "bg": "#FB923C",
+        "text": "#431407"
+      },
+      "snacks": {
+        "bg": "#F472B6",
+        "text": "#500724"
+      }
+    },
+    "semantic": {
+      "success": "#4ADE80",
+      "error": "#F87171",
+      "warning": "#FBBF24"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "card": "shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]",
+      "button": "shadow-[0px_4px_0px_0px_rgba(124,58,237,0.3)]",
+      "button_active": "active:shadow-none active:translate-y-[4px]"
+    },
+    "borders": {
+      "default": "border-2 border-slate-200",
+      "active": "border-2 border-violet-600"
+    },
+    "radius": {
+      "default": "rounded-xl",
+      "button": "rounded-lg"
+    }
+  },
+  "layout_strategy": {
+    "pos_screen": {
+      "grid": "grid grid-cols-12 gap-6 h-screen p-6",
+      "product_area": "col-span-8 flex flex-col gap-6",
+      "cart_area": "col-span-4 bg-white rounded-2xl border-2 border-slate-200 p-6 flex flex-col h-full shadow-lg"
+    },
+    "bento_grid": {
+      "container": "grid grid-cols-3 gap-4 auto-rows-[180px]",
+      "item": "relative overflow-hidden rounded-xl border-2 border-transparent hover:border-violet-500 transition-all duration-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer group"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-violet-600 text-white font-bold py-3 px-6 rounded-lg shadow-[0px_4px_0px_0px_#5b21b6] active:shadow-none active:translate-y-[4px] transition-all",
+      "secondary": "bg-white text-slate-900 border-2 border-slate-200 font-bold py-3 px-6 rounded-lg shadow-[0px_4px_0px_0px_#cbd5e1] active:shadow-none active:translate-y-[4px] transition-all hover:bg-slate-50",
+      "category_pill": "px-4 py-2 rounded-full font-bold text-sm transition-transform hover:scale-105 active:scale-95"
+    },
+    "cards": {
+      "product": "bg-white rounded-xl border border-slate-200 p-4 hover:shadow-md transition-shadow flex flex-col gap-2",
+      "stat": "bg-white p-6 rounded-xl border border-slate-100 shadow-sm"
+    }
+  },
+  "image_urls": {
+    "products": [
+      {
+        "name": "Iced Coffee",
+        "category": "Cold Drinks",
+        "url": "https://images.unsplash.com/photo-1686575669781-74e03080541b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxpY2VkJTIwY29mZmVlJTIwZ2xhc3MlMjBjYWZlfGVufDB8fHx8MTc2OTU3MzkyN3ww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Hot Latte",
+        "category": "Hot Drinks",
+        "url": "https://images.unsplash.com/photo-1691723247105-57e32577dc72?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwyfHxob3QlMjBsYXR0ZSUyMGFydCUyMGN1cHxlbnwwfHx8fDE3Njk1NzM5MzB8MA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Croissant",
+        "category": "Snacks",
+        "url": "https://images.unsplash.com/photo-1709798289100-7b46217e0325?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMGNyb2lzc2FudCUyMGJha2VyeXxlbnwwfHx8fDE3Njk1NzM5MzJ8MA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Strawberry Smoothie",
+        "category": "Cold Drinks",
+        "url": "https://images.unsplash.com/photo-1622597468620-656aa1f981ea?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxmcmVzaCUyMGNyb2lzc2FudCUyMGJha2VyeXxlbnwwfHx8fDE3Njk1NzM5MzJ8MA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Chocolate Muffin",
+        "category": "Snacks",
+        "url": "https://images.pexels.com/photos/3650437/pexels-photo-3650437.jpeg"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Implement a 'Tactile' feel: Buttons should physically move down when clicked (using translate-y and shadow manipulation).",
+    "Use the 'Bento Grid' for the main POS product selection area.",
+    "Ensure the Cart is always visible and 'Sticky' on the right side.",
+    "Use 'Outfit' font for all headings to give it a friendly, modern cafe vibe.",
+    "For the Admin Dashboard, use a cleaner, high-density table layout but keep the colorful category badges.",
+    "The '9 Top Products' should be populated using the images provided in 'image_urls'.",
+    "Strictly follow the color coding for categories: Cold (Cyan), Hot (Orange), Snacks (Pink).",
+    "Ensure all interactive elements have 'data-testid' attributes."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
